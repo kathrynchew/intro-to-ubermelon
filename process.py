@@ -7,12 +7,12 @@ def sales_reports(log_file):
     for line in log_file:
         line = line.rstrip()
         day = line[0:3]
-        if day == "Tue":
+        if day == "Mon":
             print line
 # create a for loop that will iterate through the log_file contents line-by-line
 # for each iteration (line), strip any white space from the right side of the line
 # for each iteration (line), set the values in indices [0:3] (characters in a string) equal to the variable "day"
-# check the value assigned to "day"; if it matches the sequence "Tue", print that line.
+# check the value assigned to "day"; if it matches the sequence "Tue"/"Mon", print that line.
 
 
 sales_reports(log_file)
